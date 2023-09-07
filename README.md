@@ -11,6 +11,7 @@ While pentesting I stumbled upon an open AJP proxy on port 8009. Hacktricks incl
 
 
 ## Instructions
+Replace `TARGET-IP` in `nginx.conf` then run the following
 ```bash
 docker build . -t nginx-ajp-proxy
 docker run -it --rm -p 80:80 nginx-ajp-proxy
